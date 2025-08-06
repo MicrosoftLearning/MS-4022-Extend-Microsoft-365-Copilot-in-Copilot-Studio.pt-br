@@ -70,15 +70,19 @@ Adicione a URL do SharePoint ao seu agente como uma fonte de conhecimento de bas
 
 ### Adicionar URL do SharePoint
 
-1. Na página de visão geral do seu agente de Suporte ao Produto no Copilot Studio, selecione **Adicionar conhecimento** na seção **Conhecimento**.
+1. Em um navegador da Web, navegue até o [Microsoft Copilot Studio](https://copilotstudio.microsoft.com/) em `https://copilotstudio.microsoft.com`.
+1. Selecione **Agentes**.
+1. Selecione **Copilot para Microsoft 365**.
+1. Selecione o agente de **Suporte ao Produto**.
+1. Na seção **Conhecimento** da página de visão geral do agente, selecione **Adicionar Conhecimento**.
 
     ![Captura de tela do Copilot Studio no Microsoft Edge destacando o botão Adicionar conhecimento para o agente de suporte ao produto.](../Media/product-support-add-knowledge.png)
 
-2. Na página **Adicionar conhecimento** do assistente que é aberto, selecione **SharePoint**.
-3. Na caixa de texto, cole a URL da biblioteca do SharePoint de **Produtos** e selecione **Adicionar**. Isso deve estar no formato: `https://DOMAIN.sharepoint.com/sites/ProductSupport/Products`.
+1. Na página **Adicionar conhecimento** do assistente que é aberto, selecione **SharePoint**.
+1. Na caixa de texto, cole a URL da biblioteca do SharePoint de **Produtos** e selecione **Adicionar**. Isso deve estar no formato: `https://DOMAIN.sharepoint.com/sites/ProductSupport/Products`.
 
-4. Selecione **Adicionar** na janela **Adicionar SharePoint** e aguarde até que a fonte de conhecimento seja adicionada ao agente. Isso pode levar alguns minutos.
-5. Observe que a biblioteca **Produtos** está listada na seção **Conhecimento** das informações de visão geral do agente.
+1. Selecione **Adicionar** na janela **Adicionar SharePoint** e aguarde até que a fonte de conhecimento seja adicionada ao agente. Isso pode levar alguns minutos.
+1. Observe que a biblioteca **Produtos** está listada na seção **Conhecimento** das informações de visão geral do agente.
 
 > **Observação**: os agentes do Copilot Studio acessam documentos em nome do usuário. Seu agente só poderá obter respostas e conteúdo de documentos aos quais seus usuários finais têm acesso.
 

@@ -19,7 +19,9 @@ Este exercício se concentra na adição de ações do conector a um agente exis
 ## Criar uma ação do conector do SharePoint
 
 1. No navegador da Web, navegue até o [Copilot Studio](https://www.copilotstudio.microsoft.com) em `https://www.copilotstudio.microsoft.com`.
-1. Na **Biblioteca**selecione o agente de **Suporte ao Produto** .
+1. Na barra lateral, selecione **Agentes**.
+1. Selecione **Microsoft 365 Copilot**.
+1. Em **Agentes**, selecione o agente de **Suporte ao Produto**.
 1. Em **ações**, selecione **Adicionar ação**.
 1. Na janela **Adicionar ação**, digite `SharePoint` na barra **Pesquisar**. Aguarde até que as ações relevantes sejam exibidas na janela.
 1. Navegue e selecione a ação do conector **Pasta de lista do SharePoint**.

@@ -108,7 +108,7 @@ Em seguida, publique seu agente declarativo no Microsoft 365 Copilot. Na página
 
 Em seguida, vamos executar o agente declarativo no Microsoft 365 Copilot e validar sua funcionalidade nas experiências **imersiva** e **no contexto**.
 
-Seguindo as etapas anteriores, você está atualmente na experiência do agente **imersivo** . Observe no painel **Agentes** à direita que o **Suporte ao produto** está selecionado como o agente com o qual você está conversando diretamente no momento.
+Seguindo as etapas anteriores, você está atualmente na experiência do agente **imersivo** . Observe no painel **Agentes** na lateral da interface de chat que o **Suporte ao Produto** está selecionado como o agente com o qual você está conversando diretamente.
 
 ![Captura de tela da experiência imersiva com o agente de suporte ao Produto no Microsoft 365 Copilot.](../Media/product-support-immersive.png)
 
@@ -117,7 +117,7 @@ Seguindo as etapas anteriores, você está atualmente na experiência do agente 
 
 Continuando no navegador, vamos testar a experiência **no contexto**.
 
-1. Acima do painel **Agentes** à direita da janela de chat, selecione **Copilot** para sair do chat imersivo com o **Agente de Suporte ao Produto** e conversar com o Microsoft 365 Copilot.
+1. Acima do painel **Agentes** na barra lateral, selecione **Chat** ou **M365 Copilot** para sair do chat imersivo com o agente de **Suporte ao Produto** e conversar com o Microsoft 365 Copilot.
 
     ![Captura de tela do botão Copilot na barra lateral do Microsoft 365 Copilot.](../Media/select-copilot.png)
 
