@@ -13,7 +13,8 @@ Este exercício deve levar aproximadamente **15** minutos para ser concluído.
 
 1. Abra o Copilot Studio em seu navegador da Web navegando até o [Copilot Studio](https://copilotstudio.microsoft.com) em `https://copilotstudio.microsoft.com`.
 1. Selecione **Ferramentas** na navegação à esquerda.
-1. Selecione **Criar** e, em seguida, selecione **Prompt**. Você vai acessar a interface do usuário do construtor de prompts.
+1. Selecione **Nova ferramenta**.
+1. Na janela pop-up Nova ferramenta, selecione **Solicitar**. Você vai acessar a interface do usuário do construtor de prompts.
 1. Na caixa de texto **Instruções**, insira `Create a marketing pitch for a product based on a `.
 1. Coloque o cursor no final da frase que você inseriu e selecione **Adicionar conteúdo**
 1. Selecione **Texto**.
@@ -64,29 +65,10 @@ Se você concluiu o laboratório anterior e criou um agente declarativo, pode ad
 1. Selecione o prompt **Criar uma Apresentação de Marketing da Contoso**.
 1. Selecione **Adicionar ao agente**. A ferramenta agora está listada nas **Ferramentas** do agente de Suporte ao Produto.
 
-### Configurar a ferramenta de prompt
-
-1. Na seção **Ferramentas** da página de visão geral do agente, selecione a ferramenta `Contoso Marketing Pitch`. Você será levado para uma página para definir as propriedades e as configurações da ferramenta.
-1. Selecione **Entradas** na navegação superior da ferramenta de prompt.
-1. Em **Entradas adicionais**, selecione **Adicionar**.
-1. Selecione a variável **Rascunho**. Um formulário é exibido.
-1. Certifique-se de que o campo **Como o agente preencherá esta entrada** esteja definido como **Preencher dinamicamente com a melhor opção (padrão).**
-1. No campo **Nome de exibição**, insira `Initial draft`.
-1. Verifique se o campo **Identificar como** está definido como **Resposta completa do usuário**
-1. Selecione **Salvar** na parte superior direita da janela.
-
 ### Atualizar as instruções do agente
 
 Atualize as instruções do agente para fornecer diretrizes para usar o prompt.
 
 1. Na caixa de texto **Instruções** , adicione o seguinte ao texto de instruções existente: `Use the Contoso Marketing Pitch action to help marketing stakeholders craft pitches for products based on their draft ideas.`
 
-## (Opcional) Testar sua ferramenta de prompt no Copilot Studio
-
-Agora, teste o agente com a ferramenta de prompt no Copilot Studio.
-
-1. No painel **Testar seu agente** na página de visão geral do agente no Copilot Studio, selecione o botão **atualizar** para atualizar o painel de teste e carregar as alterações mais recentes do agente.
-1. Na caixa de texto da conversa de teste, digite `Create a Contoso marketing pitch based on the following draft: "Bouncy ball is the hottest product on the market for both youth and adults. It's durable and the largest of its kind."` e envie a mensagem.
-1. Revise a resposta e observe que o agente está seguindo as diretrizes fornecidas nas instruções do prompt personalizado.
-
-Você concluiu o exercício e validou a funcionalidade da ferramenta de prompt.
+Você concluiu o exercício e criou uma ferramenta de prompt para seu agente.
