@@ -3,21 +3,21 @@ lab:
   title: '1.3: Adicionar prompts iniciais'
 ---
 
-# Adicionar prompts iniciais
+# Adicionar prompts sugeridos
 
-Neste exercício, você atualizará o agente declarativo criado no exercício anterior com seis prompts iniciais.
+Neste exercício, você atualizará o agente declarativo criado no exercício anterior com seis prompts sugeridos.
 
 Esse exercício deve levar aproximadamente **10** minutos para ser executado.
 
-## Definir prompts iniciais
+## Defina prompts sugeridos
 
 No Copilot Studio:
 
 1. Navegue até a página **Visão Geral** do agente de **Suporte ao Produto**.
-1. Na seção **Prompts iniciais**, selecione **Editar**.
-1. Adicione os seis prompts iniciais a seguir:
+1. Na seção **Prompts sugeridos**, selecione **Adicionar prompts sugeridos**.
+1. Adicione os prompts a seguir:
 
-      | Título                  | Texto                                              |
+      | Título                  | Prompt                                              |
       |------------------------|--------------------------------------------------|
       | Informações sobre produtos    | Diga-me sobre a Eagle Air                          |
       | Política de devoluções         | Qual é a política de devoluções?                      |
@@ -42,7 +42,7 @@ Vamos publicar o agente atualizado no Microsoft 365 Copilot.
 ## Teste o seu agente no Microsoft 365 Copilot.
 
 1. No **Microsoft 365 Copilot**, clique no ícone no canto superior direito para **expandir o painel lateral do Copilot**.
-1. Encontre **Suporte ao produto** na lista de agentes e selecione-o para entrar na experiência imersiva para conversar diretamente com o agente. Observe que os prompts iniciais que você definiu no Copilot Studio são exibidos na interface do usuário.
+1. Encontre **Suporte ao produto** na lista de agentes e selecione-o para entrar na experiência imersiva para conversar diretamente com o agente. Observe que os prompts sugeridos que você definiu no Copilot Studio são exibidos na interface do usuário.
 
     ![Captura de tela do Microsoft 365 Copilot no Microsoft Edge mostrando os prompts iniciais do agente de Suporte ao Produto.](../Media/product-support-starter-prompts.png)
-1. **Selecione** um prompt inicial e revise a resposta.
+1. **Selecione** um prompt sugerido e revise a resposta.
