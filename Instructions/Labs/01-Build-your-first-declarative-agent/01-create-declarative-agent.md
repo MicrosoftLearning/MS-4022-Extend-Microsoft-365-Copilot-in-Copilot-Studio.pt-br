@@ -35,22 +35,27 @@ Comece criando um novo agente declarativo no Copilot Studio. Use a IA generativa
     I'd like to create a product support agent that answers questions related to Contoso Electronics products.
     ```
 
-1. Selecione **Enter** ou **Enviar** para enviar sua mensagem.
-1. Se solicitado a sugerir um nome para seu agente, insira `Product support` e envie sua mensagem.
-1. Selecione **Ignorar para configurar** na parte superior da interface de conversa para visualizar a página de visão geral do agente e revisar o que a IA generativa configurou até agora.
+1. Selecione **Enter** ou **Enviar** para enviar sua mensagem. O assistente começa a configurar seu agente.
+1. Se solicitado a sugerir um nome para seu agente, insira `Product support` e envie sua mensagem. O assistente atualiza o nome do agente.
+1. O assistente solicitará mais informações sobre o agente. Em vez de responder, selecione **Ignorar para configurar** na parte superior da interface de conversa para exibir a página de visão geral do agente e examinar o que a IA generativa configurou até agora.
+![Captura de tela da interface de conversa para criação do agente, realçando o botão ignorar para configurar.](../Media/skip-to-configure-agent.png)
 
 ## Configurar o agente e definir instruções
 
-Em seguida, atualize as propriedades e os metadados do agente manualmente.
+Em seguida, atualize manualmente as propriedades e os metadados do agente para garantir resultados consistentes para este exercício.
 
-1. Revise o **Nome** que o assistente de IA generativa definiu para o agente. Atualize o nome para garantir que seja `Product support`.
-1. Atualize a propriedade de **descrição** para `A product support agent that can answer queries about Contoso Electronics products`.
-1. Na caixa de texto **Instruções**, insira:
+1. Revise o **Nome** que o assistente de IA generativa definiu para o agente. Atualize o nome, se necessário, para garantir que ele seja `Product support`.
+1. Revise a propriedade de **descrição** e atualize-a para  `A product support agent that can answer queries about Contoso Electronics products`.
+1. Na caixa de texto **Instruções**, substitua as instruções existentes pelo seguinte:
   
     ```md
-        You are an agent tasked with answering questions about Contoso Electronics products. Start every response to the user with "Thanks for using a Copilot agent!\n\n" and then answer the questions and help the user.
+        - You are an agent tasked with answering questions about Contoso Electronics products.
+        - Start every response to the user with "Thanks for using a Copilot agent!\n\n" and then answer the questions and help the user.
+        - Do not answer questions unrelated to Contoso Electronics products.
+        - Maintain a helpful and approachable tone throughout interactions.
     ```
 
+1. Observe que os prompts sugeridos foram gerados usando IA generativa. Você atualizará os prompts em um próximo exercício.
 1. Selecione o botão **Criar** na parte superior da página.  Após alguns instantes, você será levado para a página de visão geral do agente.
 
 ## Testar o agente no Copilot Studio
@@ -62,28 +67,29 @@ Em seguida, teste o comportamento do agente no painel de teste no Copilot Studio
     ![Captura de tela da página do agente de suporte ao produto antes da publicação.](../Media/product-support-publish-details.png)
 
 1. Se o painel **Testar o agente** não for exibido à direita das informações de visão geral do agente, selecione o botão **Testar** ao lado do botão Publicar para abrir o painel de teste.
-1. Na caixa de texto, digite `What can you do?` e envie sua mensagem.
+1. Na caixa de texto dentro do painel de teste, insira `What can you do?` e envie a mensagem.
 1. Aguarde a resposta. Observe como a resposta começa com o texto "Obrigado por usar um agente do Copilot!" conforme indicado nas instruções definidas para o agente anteriormente.
 
     ![Captura de tela da conversa do painel de teste com o agente de suporte ao produto.](../Media/product-support-test-pane-1.png)
 
-    Observe também que o agente atualmente tem instruções, mas ainda não tem nenhuma fonte de conhecimento ou ação personalizada. Você ainda não configurou o agente para responder a perguntas sobre os produtos da Contoso. Você fará isso no próximo exercício.
+    Observe também que o agente atualmente tem instruções, mas ainda não tem nenhuma fonte de conhecimento ou ação personalizada. Você ainda não configurou o agente para responder a perguntas sobre produtos Contoso corretamente. Você fará isso no próximo exercício.
 
     > [!NOTE]
-    > Se você precisar editar seu agente, feche o painel de teste e selecione **editar** na seção **Detalhes** da página de visão geral do agente. Antes de testar novamente, selecione o botão de **atualização** dentro do painel de teste para carregar as alterações mais recentes.
+    > Se precisar editar o agente, selecione **editar** na seção **Detalhes** da página de visão geral do agente. Salve suas alterações. Antes de testar novamente, selecione o botão **Iniciar nova sessão de teste** no painel de teste.
 
 ## Publicar o agente no Microsoft 365 Copilot
 
-Em seguida, publique seu agente declarativo no Microsoft 365 Copilot. Na página de visão geral do agente de **Suporte ao produto**:
+Em seguida, publique o seu agente no Microsoft 365 Copilot. Na página de visão geral do agente de **Suporte ao produto**:
 
 1. Selecione o botão **Publicar**. Será solicitado inserir informações sobre o seu agente que serão exibidas aos usuários no Microsoft 365 Copilot e no Microsoft Teams.
 
     > [!NOTE]
     > As informações neste formulário são usadas para preencher a entrada do catálogo nos Catálogos do Office e do Teams da sua organização e na lista de Aplicativos Integrados do Microsoft Admin Center. Não é usada pelo modelo de linguagem do Microsoft 365 Copilot para invocar seu agente.
 
-1. Na caixa de texto **Descrição breve**, digite `Answers questions about Contoso Electronics products`.
+1. Na caixa de texto **Descrição curta**, insira `Answers questions about Contoso Electronics products`, substituindo o conteúdo gerado automaticamente.
 1. Aceite as sugestões padrão para os campos remanescentes.
 1. Selecione **Publicar**.
+    ![Captura de tela da janela Publicar agente antes de selecionar o botão Publicar.](../Media/publish-window.png)
 1. Aguarde o agente ser publicado.  Não feche a janela modal durante a publicação. Isso pode levar alguns minutos.
 
     > [!NOTE]
@@ -91,6 +97,7 @@ Em seguida, publique seu agente declarativo no Microsoft 365 Copilot. Na página
 
 1. Depois que o agente for publicado, a janela **Opções de disponibilidade** será exibida.
 1. Em **Compartilhar link**, selecione **Copiar** para copiar o link de compartilhamento do seu agente e selecione **Concluído**.
+    ![Captura de tela da janela Opções de disponibilidade realçando o botão Copiar.](../Media/share-link-copy.png)
 1. Observe que a seção **Detalhes da publicação** da página de visão geral do seu agente reflete que o agente foi publicado.
 
     ![Captura de tela da seção de detalhes de publicação do agente de suporte ao produto no Copilot Studio.](../Media/publish-details.png)
@@ -106,9 +113,9 @@ Em seguida, publique seu agente declarativo no Microsoft 365 Copilot. Na página
 
 ## Testar o agente no Microsoft 365 Copilot
 
-Em seguida, vamos executar o agente declarativo no Microsoft 365 Copilot e validar sua funcionalidade nas experiências **imersiva** e **no contexto**.
+Em seguida, vamos testar o agente no Microsoft 365 Copilot e validar sua funcionalidade nas experiências **imersivas** e **contextuais**.
 
-Seguindo as etapas anteriores, você está atualmente na experiência do agente **imersivo** . Observe no painel **Agentes** na lateral da interface de chat que o **Suporte ao Produto** está selecionado como o agente com o qual você está conversando diretamente.
+Seguindo as etapas anteriores, você está atualmente na experiência do agente **imersivo** . Observe na seção **Agentes** do painel na lateral da interface de chat que o **Suporte ao Produto** está selecionado como o agente com o qual você está conversando diretamente.
 
 ![Captura de tela da experiência imersiva com o agente de suporte ao Produto no Microsoft 365 Copilot.](../Media/product-support-immersive.png)
 
@@ -117,7 +124,7 @@ Seguindo as etapas anteriores, você está atualmente na experiência do agente 
 
 Continuando no navegador, vamos testar a experiência **no contexto**.
 
-1. Acima do painel **Agentes** na barra lateral, selecione **Chat** ou **M365 Copilot** para sair do chat imersivo com o agente de **Suporte ao Produto** e conversar com o Microsoft 365 Copilot.
+1. Acima do painel **Agentes** na barra lateral, selecione **Novo chat** para iniciar uma nova conversa com o Microsoft 365 Copilot, saindo do chat imersivo com o agente de **Suporte ao Produto**.
 
     ![Captura de tela do botão Copilot na barra lateral do Microsoft 365 Copilot.](../Media/select-copilot.png)
 
@@ -125,7 +132,7 @@ Continuando no navegador, vamos testar a experiência **no contexto**.
 
     ![Captura de tela do Microsoft Edge mostrando o submenu do agente no Microsoft 365 Copilot.](../Media/copilot-agents-flyout.png)
 
-1. No submenu, selecione **Suporte ao produto**. Observe a mensagem de status acima da caixa de mensagem: **Chat com o suporte ao produto**, o que significa que você está usando a experiência no contexto do agente.
+1. No submenu, selecione **Suporte ao Produto**. Observe a mensagem de status acima da caixa de mensagem: Ele exibe **Conversando com o Suporte ao Produto**. Agora, você está conversando com seu agente de Suporte ao Produto **contextualmente** dentro de uma conversa com Copilot, o que significa que seu agente pode considerar o contexto de sua conversa com o Copilot.
 
     ![Captura de tela do Microsoft Edge mostrando o Microsoft 365 Copilot. A mensagem de status "Chat com o suporte ao produto" é destacada.](../Media/product-support-in-context.png)
 
@@ -133,7 +140,7 @@ Continuando no navegador, vamos testar a experiência **no contexto**.
 
 1. Aguarde a resposta. Observe como a resposta começa com o texto "Obrigado por sua pergunta!" seguindo as orientações que você forneceu nas instruções do agente.
 
-1. Para sair da experiência no contexto, clique no (X) na mensagem de status. Observe que a mensagem de status foi removida e uma mensagem é exibida na janela do chat indicando que você não está mais conversando com o agente.
+1. Para sair da experiência no contexto, clique no (X) na mensagem de status. Observe que a mensagem de status foi removida e uma mensagem é exibida na janela de chat indicando que você não está mais conversando com o agente de Suporte ao Produto. Você pode continuar a conversa diretamente com o Copilot.
 
     ![Captura de tela do Microsoft Edge mostrando o Microsoft 365 Copilot. O ícone de cruz na mensagem de status do agente é destacado.](../Media/exit-in-context-experience.png)
 
