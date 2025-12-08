@@ -1,5 +1,3 @@
-**⚠️ This GitHub repo will retire on 30th December 2025.** 
-
 # Laboratórios: estender o Microsoft 365 Copilot no Copilot Studio
 
 Este repositório contém exercícios e arquivos de suporte para o curso de qualificação da **MS-4022: Estender o Microsoft 365 Copilot no Copilot Studio**.
